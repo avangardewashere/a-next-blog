@@ -1,6 +1,6 @@
 "use client";
-import { createContext } from "react";
-export default ThemeContext = createContext();
+import { createContext,useState } from "react";
+export const ThemeContext = createContext();
 
 const getFromLocalStorage = () => {
   if (typeof window !== undefined) {
@@ -14,5 +14,10 @@ export const ThemeContextProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => {
     return getFromLocalStorage();
   });
-  return <ThemeContextProvider>{children}</ThemeContextProvider>;
+ 
+  return (
+    <ThemeContext.Provider value={{theme}}>
+      {children}
+    </ThemeContext.Provider>
+  );
 };
