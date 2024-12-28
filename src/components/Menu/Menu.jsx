@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./index.module.css";
 
-const Footer = () => {
+const Menu = () => {
   return <div className={styles.container}>Menu</div>;
 };
 
-export default Footer;
+export default Menu;

@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./index.module.css";
 
-const Footer = () => {
-  return <div className={styles.container}>Pagination</div>;
+const Pagination = () => {
+  return <div className={styles.container}></div>;
 };
 
-export default Footer;
+export default Pagination;
