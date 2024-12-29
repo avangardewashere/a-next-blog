@@ -9,10 +9,7 @@ const CardList = () => {
       <div className={styles.title}>Recent Posts</div>
       <div className={styles.posts}>
         <div className={styles.post}>
-          <div className={styles.imageContainer}>
-            <Image src="/p1.jpeg" fill alt="" />
-          </div>
-          <div className={styles.textContainer}></div>
+         {/* Componentize */}
         </div>
       </div>
       <Pagination />
