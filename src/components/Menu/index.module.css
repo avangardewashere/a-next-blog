@@ -82,14 +82,20 @@
 .style {
   background: #789cff;
 }
-.categoryList{
-  display:flex;
-  margin:4px 0;
+.categoryList {
+  display: flex;
+  margin: 35px 0 65px;
+  display: flex;
+  flex-wrap: wrap;
+  gap:  20px;
 }
 
+ 
+
 .categoryItem {
-  border-radius: 4px;
-  padding: 4px 10px;
+  border-radius: 10px;
+  padding: 10px 25px;
   color: white;
-  margin:2px;
+ 
+  font-size: 14px;;
 }

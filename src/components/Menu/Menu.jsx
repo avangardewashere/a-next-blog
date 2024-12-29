@@ -3,6 +3,7 @@ import styles from "./index.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import MenuPosts from "./MenuPost/menuPost";
+import CategoriesList from "./CategoriesList/categoriesList";
 
 const Menu = () => {
   return (
@@ -32,14 +33,16 @@ const Menu = () => {
 
       <h2 className={styles.subTitle}>{"Discover By Topic"}</h2>
       <h1 className={styles.title}>Categories</h1>
-      <div className={styles.categoryList}>
+
+        <CategoriesList /> 
+      {/* <div className={styles.categoryList}>
         <Link
           className={`${styles.categoryItem} ${styles.style}`}
           href="/blog?cat=style"
         >
           Style
         </Link>
-      </div>
+      </div> */}
 
       {/** MOst POpulrt */}
       <h2 className={styles.subTitle}>{"What's hot"}</h2>
