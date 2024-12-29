@@ -19,6 +19,7 @@ const CategoryList = () => {
             height={32}
             className={styles.image}
           />
+          Styles
         </Link>
         <Link
           href="/blog?cat=travel"
@@ -31,6 +32,7 @@ const CategoryList = () => {
             height={32}
             className={styles.image}
           />
+          Travel
         </Link>
         <Link
           href="/blog?cat=culture"
@@ -43,6 +45,7 @@ const CategoryList = () => {
             height={32}
             className={styles.image}
           />
+          Culture
         </Link>
         <Link
           href="/blog?cat=coding"
@@ -55,6 +58,7 @@ const CategoryList = () => {
             height={32}
             className={styles.image}
           />
+          Coding
         </Link>
         <Link
           href="/blog?cat=food"
@@ -67,6 +71,7 @@ const CategoryList = () => {
             height={32}
             className={styles.image}
           />
+          Food
         </Link>
         <Link
           href="/blog?cat=fashion"
@@ -79,6 +84,7 @@ const CategoryList = () => {
             height={32}
             className={styles.image}
           />
+          Fashion
         </Link>
       </div>
     </div>
