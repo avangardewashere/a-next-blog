@@ -6,8 +6,8 @@ import Image from "next/image";
 const Menu = () => {
   return (
     <div className={styles.container}>
-      <h2>{"What's hot"}</h2>
-      <h1>Most Popular</h1>
+      <h2 className={styles.subTitle}>{"What's hot"}</h2>
+      <h1 className={styles.title}>Most Popular</h1>
       <div className={styles.items}>
         <Link href="/" className={styles.item}>
           <div className={styles.imageContainer}>
@@ -17,9 +17,11 @@ const Menu = () => {
             <span className={`${styles.category} ${styles.travel}`}>
               Travel
             </span>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <h3 className={styles.postTitle}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h3>
             <div className={styles.detail}>
-              <span className={styles.username }>John Doe</span>
+              <span className={styles.username}>John Doe</span>
               <span className={styles.date}>10.03.2023</span>
             </div>
           </div>
