@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./index.module.css";
 import Pagination from "../Pagination/pagination";
 import Image from "next/image";
+import Card from "./card/card";
 
 const CardList = () => {
   return (
@@ -10,6 +11,10 @@ const CardList = () => {
       <div className={styles.posts}>
         <div className={styles.post}>
          {/* Componentize */}
+         <Card /> 
+         <Card /> 
+         <Card /> 
+         <Card /> 
         </div>
       </div>
       <Pagination />
