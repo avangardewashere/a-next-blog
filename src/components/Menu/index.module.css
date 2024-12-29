@@ -82,3 +82,14 @@
 .style {
   background: #789cff;
 }
+.categoryList{
+  display:flex;
+  margin:4px 0;
+}
+
+.categoryItem {
+  border-radius: 4px;
+  padding: 4px 10px;
+  color: white;
+  margin:2px;
+}

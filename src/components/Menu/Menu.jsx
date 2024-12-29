@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./index.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import MenuPosts from "./MenuPost/menuPost";
 
 const Menu = () => {
   return (
@@ -9,9 +10,9 @@ const Menu = () => {
       {/** Chosen */}
       <h2 className={styles.subTitle}>{"Chosen by the editor"}</h2>
       <h1 className={styles.title}>Editor's Pick</h1>
-      <div className={styles.items}>
+      <MenuPosts withImage={false} /> 
+      {/* <div className={styles.items}>
         <Link href="/" className={styles.item}>
-   
           <div className={styles.textContainer}>
             <span className={`${styles.category} ${styles.travel}`}>
               Travel
@@ -25,12 +26,26 @@ const Menu = () => {
             </div>
           </div>
         </Link>
+      </div> */}
+
+      {/**Categories */}
+
+      <h2 className={styles.subTitle}>{"Discover By Topic"}</h2>
+      <h1 className={styles.title}>Categories</h1>
+      <div className={styles.categoryList}>
+        <Link
+          className={`${styles.categoryItem} ${styles.style}`}
+          href="/blog?cat=style"
+        >
+          Style
+        </Link>
       </div>
 
       {/** MOst POpulrt */}
       <h2 className={styles.subTitle}>{"What's hot"}</h2>
       <h1 className={styles.title}>Most Popular</h1>
-      <div className={styles.items}>
+      <MenuPosts withImage={true} /> 
+      {/* <div className={styles.items}>
         <Link href="/" className={styles.item}>
           <div className={styles.imageContainer}>
             <Image src="/p1.jpeg" alt="" fill className={styles.image} />
@@ -48,7 +63,7 @@ const Menu = () => {
             </div>
           </div>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
