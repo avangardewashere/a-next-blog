@@ -13,13 +13,15 @@ const Featured = () => {
           <Image src="/p1.jpeg" alt="" fill className={styles.image} />
         </div>
         <div className={styles.textContainer}>
-          <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
-          <p>
+          <h1 className={styles.postTitle}>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </h1>
+          <p className={styles.postDesc}>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores
             labore similique suscipit perspiciatis dolorum eveniet accusamus
             mollitia corrupti blanditiis nemo.
           </p>
-          <button>Read More</button>
+          <button className={styles.button}>Read More</button>
         </div>
       </div>
     </div>
