@@ -5,10 +5,11 @@
 .burger {
   width: 20px;
   height: 16px;
-  display: flex;
+  display:none;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
+
 }
 
 .line {
