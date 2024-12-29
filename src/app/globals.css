@@ -1,6 +1,6 @@
 :root {
   --bg: white;
-  --texColor: black;
+  --textColor: black;
   --softBg: #f0f0f0;
   --softTextColor: #626262;
 }
@@ -9,6 +9,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  caret-color:transparent;
+  user-select: none;
 }
 
 body {
