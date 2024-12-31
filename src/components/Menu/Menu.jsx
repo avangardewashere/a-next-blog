@@ -1,11 +1,10 @@
 import React from "react";
 import styles from "./index.module.css";
-import Link from "next/link";
-import Image from "next/image";
+ 
 import MenuPosts from "./MenuPost/menuPost";
 import CategoriesList from "./CategoriesList/categoriesList";
 
-const Menu = () => {
+const MenuComponent = () => {
   return (
     <div className={styles.container}>
       {/** Chosen */}
@@ -71,4 +70,4 @@ const Menu = () => {
   );
 };
 
-export default Menu;
+export default MenuComponent;

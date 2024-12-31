@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./index.module.css";
-import Menu from "@/components/Menu/Menu";
+ 
 import Image from "next/image";
+import MenuComponent from "./../../components/Menu/Menu";
 
 const SinglePostPage = () => {
   return (
@@ -27,7 +28,7 @@ const SinglePostPage = () => {
       </div>
       <div className={styles.content}>
         <div className={styles.post}></div>
-        <Menu />
+        <MenuComponent />
       </div>
     </div>
   );
