@@ -3,7 +3,7 @@
   padding: 20px 0px;
   display: flex;
   justify-content: space-between;
-  color: var(--softText);
+  color: var(--softTextColor);
 }
 
 .info {

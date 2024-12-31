@@ -10,7 +10,7 @@
 }
 
 .title {
-  font-size: 20px;
+  font-size: 20px;  color:var(--textColor) !important;
 }
 
 .items {
@@ -57,7 +57,18 @@
   font-size: 12px;
   color: white;
   width: max-content;
+  
 }
+
+.detail{
+  gap:10px;
+}
+
+.detail > .username, .detail > .date{
+  color:var(--softTextColor) !important;
+  margin-inline:0px 4px;
+}
+
 
 .category.travel {
   background: #ff7857;
@@ -88,6 +99,7 @@
   display: flex;
   flex-wrap: wrap;
   gap:  20px;
+  
 }
 
  
