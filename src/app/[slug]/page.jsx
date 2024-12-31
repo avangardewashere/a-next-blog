@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
-
+import Comments from "@/src/components/comments/comments"
 import Image from "next/image";
 import MenuComponent from "./../../components/Menu/Menu";
 
@@ -49,6 +49,9 @@ const SinglePostPage = () => {
               Doloremque totam tempora asperiores, vel eveniet eligendi mollitia
               necessitatibus alias quae sed.
             </p>
+          </div>
+          <div className={styles.comment}>
+           <Comments />
           </div>
         </div>
         <MenuComponent />
