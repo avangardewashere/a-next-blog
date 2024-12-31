@@ -36,15 +36,19 @@
   font-weight: 300;
   color: var(--softTextColor);
 }
-.title{
-  color:var(--textColor)
+.title {
+  color: var(--textColor);
 }
 
 .link {
   border-bottom: 1px solid crimson;
   width: max-content;
-  padding:10px 0;
-  color:var(--textColor)
+  padding: 10px 0;
+  color: var(--textColor);
 }
 
-
+@media screen and(max-width:1280px) {
+  .imageContainer {
+    display: none;
+  }
+}

@@ -21,7 +21,7 @@ const Card = () => {
           in libero dignissimos, tempore rerum blanditiis...
         </p>
         <Link className={styles.link} href="/">
-          Read Mmore
+          Read More
         </Link>
       </div>
     </div>
