@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
- 
+
 import Image from "next/image";
 import MenuComponent from "./../../components/Menu/Menu";
 
@@ -14,20 +14,43 @@ const SinglePostPage = () => {
           </h1>
           <div className={styles.user}>
             <div className={styles.userImageContainer}>
-              <Image src="/p1.jpeg" alt="" fill className={styles.image} />
+              <Image src="/p1.jpeg" alt="" fill className={styles.avatar} />
             </div>
             <div className={styles.userTextContainer}>
-              <span>John Doe</span>
-              <span>01.01.2024</span>
+              <span className={styles.username}>John Doe</span>
+              <span className={styles.date}>01.01.2024</span>
             </div>
           </div>
         </div>
-        <div className={styles.ImageContainer}>
+
+        <div className={styles.imageContainer}>
           <Image src="/p1.jpeg" alt="" fill className={styles.image} />
         </div>
       </div>
       <div className={styles.content}>
-        <div className={styles.post}></div>
+        <div className={styles.post}>
+          <div className={styles.description}>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque totam tempora asperiores, vel eveniet eligendi mollitia
+              necessitatibus alias quae sed.
+            </p>
+
+            <h3>Lorem ipsum dolor sit.</h3>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque totam tempora asperiores, vel eveniet eligendi mollitia
+              necessitatibus alias quae sed.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Doloremque totam tempora asperiores, vel eveniet eligendi mollitia
+              necessitatibus alias quae sed.
+            </p>
+          </div>
+        </div>
         <MenuComponent />
       </div>
     </div>

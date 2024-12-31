@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.css";
- 
+
 import MenuPosts from "./MenuPost/menuPost";
 import CategoriesList from "./CategoriesList/categoriesList";
 
@@ -8,9 +8,11 @@ const MenuComponent = () => {
   return (
     <div className={styles.container}>
       {/** Chosen */}
-      <h2 className={styles.subTitle}>{"Chosen by the editor"}</h2>
-      <h1 className={styles.title}>Editor's Pick</h1>
-      <MenuPosts withImage={false} /> 
+
+      <h2 className={styles.subTitle}>{"What's hot"}</h2>
+      <h1 className={styles.title}>Most Popular</h1>
+
+      <MenuPosts withImage={false} />
       {/* <div className={styles.items}>
         <Link href="/" className={styles.item}>
           <div className={styles.textContainer}>
@@ -33,7 +35,7 @@ const MenuComponent = () => {
       <h2 className={styles.subTitle}>{"Discover By Topic"}</h2>
       <h1 className={styles.title}>Categories</h1>
 
-        <CategoriesList /> 
+      <CategoriesList />
       {/* <div className={styles.categoryList}>
         <Link
           className={`${styles.categoryItem} ${styles.style}`}
@@ -44,9 +46,9 @@ const MenuComponent = () => {
       </div> */}
 
       {/** MOst POpulrt */}
-      <h2 className={styles.subTitle}>{"What's hot"}</h2>
-      <h1 className={styles.title}>Most Popular</h1>
-      <MenuPosts withImage={true} /> 
+      <h2 className={styles.subTitle}>{"Chosen by the editor"}</h2>
+      <h1 className={styles.title}>Editor's Pick</h1>
+      <MenuPosts withImage={true} />
       {/* <div className={styles.items}>
         <Link href="/" className={styles.item}>
           <div className={styles.imageContainer}>
