@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 import Link from "next/link";
 
 const AuthLinks = () => {
-  const status = "notauth";
+  const status = "auth";
 
   const [open, setOpen] = useState(false);
 
